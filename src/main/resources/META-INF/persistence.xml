@@ -8,6 +8,7 @@
 	<persistence-unit name="auto"
 		transaction-type="RESOURCE_LOCAL">
 		<class>be.com.elton.Automovel</class>
+		 <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
