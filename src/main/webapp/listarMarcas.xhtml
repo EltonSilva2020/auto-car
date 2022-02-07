@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:body>
+	<h:form>
+        Marca: <h:outputText value="#{automovel.modelo.marca}" />
+        Modelo: <h:outputText value="#{automovel.modelo}" />
+        
+        Preço:
+        <h:outputText value="#{automovel.preco}">
+			<f:convertNumber type="currency" />
+		</h:outputText>
+	</h:form>
+
+</h:body>
+</html>
