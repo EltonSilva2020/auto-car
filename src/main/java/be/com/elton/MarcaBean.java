@@ -6,9 +6,9 @@ import javax.faces.bean.ManagedBean;
 public class MarcaBean {
 
 	private Marca marca = new Marca();
-	
+
 	public void getMarca(Marca marca) {
-		
+
 		this.marca = marca;
 	}
 }

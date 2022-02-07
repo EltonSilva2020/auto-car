@@ -23,16 +23,15 @@ public class Automovel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	
+
 	private Modelo modelo;
-    @Min(1900)
-    @Max(message = "O maximo do ano da fabricaçao é: ", value = 0)
+	@Min(1900)
+	@Max(message = "O maximo do ano da fabricaçao é: ", value = 0)
 	private Integer anoFabricacao;
-    @Min(1900)
-    @Max(value = 1, message = "O maximo do ano do modelo é {0}")
+	@Min(1900)
+	@Max(value = 1, message = "O maximo do ano do modelo é {0}")
 	private Integer anoModelo;
-    @NotNull(groups = {ValidacaoMinima.class, Default.class})
+	@NotNull(groups = { ValidacaoMinima.class, Default.class })
 	private Double preco;
 	private Double kilometragem;
 	private String observacoes;
@@ -72,5 +71,7 @@ public class Automovel {
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
 	}
+
+	
 
 }

@@ -29,25 +29,6 @@ public class AutomovelBean {
 		return automoveis;
 
 	}
-	
-
-	public Marca getMarca() {
-		return marca;
-	}
-
-
-	public void setMarca(Marca marca) {
-		this.marca = marca;
-	}
-
-
-	public Automovel getAutomovel() {
-		return automovel;
-	}
-
-	public void setAutomovel(Automovel automovel) {
-		this.automovel = automovel;
-	}
 
 	public void salva(Automovel automovel) {
 
@@ -58,8 +39,6 @@ public class AutomovelBean {
 		em.getTransaction().commit();
 
 		em.close();
-		
-		
 
 	}
 
@@ -75,6 +54,22 @@ public class AutomovelBean {
 		tx.commit();
 		em.close();
 
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+
+	public Automovel getAutomovel() {
+		return automovel;
+	}
+
+	public void setAutomovel(Automovel automovel) {
+		this.automovel = automovel;
 	}
 
 }
